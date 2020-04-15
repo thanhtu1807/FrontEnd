@@ -1,0 +1,22 @@
+.container-group {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(87, 84, 84, 1);
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.container-group:hover {
+    background-color:  rgba(87, 84, 84, 0.9);
+}
+
+.container-group .img, .title {    
+   padding: 6px;
+}
+
+a {
+    text-decoration: none;
+}
