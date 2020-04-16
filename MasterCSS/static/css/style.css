@@ -1,0 +1,10 @@
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.header {
+    grid-column: 1/4;
+}
