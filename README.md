@@ -1,2 +1,2 @@
 # FrontEnd
-Learning FrontEnd at Coders Tokyo 
+Learning FrontEnd and Assignment
