@@ -1,116 +1,225 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <!-- material-design-iconic-font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <title>Bootstrap Assignment</title>
-  </head>
-  <body>
-    <h5 class="text-center">1. Login Form</h5>
-    <!-- form -->
-    <form>
-      <div class="row justify-content-center">
-        <div class="input-group mt-3 mb-3 col-6 ">
-          <input type="text" class="border-right-0 form-control" placeholder="Full Name">
-          <div class="input-group-append">
-            <span class="bg-white border-left-0 input-group-text"><i class="zmdi zmdi-account"></i></span>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="input-group mb-3 col-6 ">
-          <input type="email" class="border-right-0 form-control" placeholder="Email">
-          <div class="input-group-append">
-            <span class="bg-white border-left-0 input-group-text"><i class="zmdi zmdi-email"></i></span>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="input-group mb-3 col-6 ">
-          <input type="password" class="border-right-0 form-control" placeholder="Password">
-          <div class="input-group-append">
-            <span class="bg-white border-left-0 input-group-text"><i class="zmdi zmdi-lock"></i></span>
-          </div>
-        </div>
-      </div>
-    </form>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- checkbox -->
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Bootstrap Assignment</title>
+</head>
+
+<body>
+  <!-- 1. Login Form -->
+  <h5 class="text-center mt-3">1. Login Form</h5>
+  <!-- form -->
+  <form>
     <div class="row justify-content-center">
-      <div class="mb-3 col-6">
-        <div class="row justify-content-between">
-          <div class="form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox"> I agree to the <a class="text-primary" href="#terms">terms</a>
-            </label>
-          </div>
-          <a href="#register" role="button" class="col-3 btn btn-primary" type="submit"><i class="far fa-save"></i>   Register</a>
+      <div class="input-group mt-3 mb-3 col-6 ">
+        <input type="text" class="border-right-0 form-control" placeholder="Full Name">
+        <div class="input-group-append">
+          <span class="bg-white border-left-0 input-group-text"><i class="fa fa-user"></i></span>
         </div>
       </div>
     </div>
-
-    <div class="row justify-content-center mb-3">- OR -</div>
-
-    <!-- button -->
     <div class="row justify-content-center">
-      <a href="#facebook" role="button" class="btn col-2 mr-1 btn-primary" type="submit"><i class="zmdi zmdi-facebook"></i>   Sign up using Facebook</a>
-      <a href="#google" role="button" class="btn col-2 ml-1 btn-danger" type="submit"><i class="fab fa-google-plus-g"></i>   Sign up using Google+</a>
+      <div class="input-group mb-3 col-6 ">
+        <input type="email" class="border-right-0 form-control" placeholder="Email">
+        <div class="input-group-append">
+          <span class="bg-white border-left-0 input-group-text"><i class="fa fa-envelope"></i></span>
+        </div>
+      </div>
     </div>
-    <br><br>
-    <h5 class="text-center">2. Table Price</h5>
-    
-    <div class="d-flex flex-row justify-content-center mt-3">
-      <div class="ml-3 mr-3">
-          <div class="card text-center" style="width: 18rem;">                
-              <ul class="list-group">
-                  <li class="list-group-item bg-danger p-3 font-weight-bold"><h4>DEV PLAN</h4></li>
-                  <li class="list-group-item p-4 font-weight-bolder"><h3>$10 / month</h3></li>
-                  <li class="list-group-item">Personal use</li>
-                  <li class="list-group-item">Unlimited projects</li>
-                  <li class="list-group-item">27/7 support</li>                        
-              </ul>
-              <div class="card-header py-3 px-4">
-                  <a href="#BuyNow" class="btn btn-danger pl-5 pr-5 w-100">BUY NOW!</a>
-              </div>
-          </div>
+    <div class="row justify-content-center">
+      <div class="input-group mb-3 col-6 ">
+        <input type="password" class="border-right-0 form-control" placeholder="Password">
+        <div class="input-group-append">
+          <span class="bg-white border-left-0 input-group-text"><i class="fa fa-lock"></i></span>
+        </div>
       </div>
-      <div class="ml-3 mr-3">
-          <div class="card text-center" style="width: 18rem;">                
-              <ul class="list-group">
-                  <li class="list-group-item bg-primary p-3 font-weight-bold"><h4>PRO PLAN</h4></li>
-                  <li class="list-group-item p-4 font-weight-bolder"><h3>$10 / month</h3></li>
-                  <li class="list-group-item">Personal use</li>
-                  <li class="list-group-item">Unlimited projects</li>
-                  <li class="list-group-item">27/7 support</li>                        
-              </ul>
-              <div class="card-header py-3 px-4">
-                  <a href="#BuyNow" class="btn btn-primary pl-5 pr-5 w-100">BUY NOW!</a>
-              </div>
-          </div>
+    </div>
+  </form>
+
+  <!-- checkbox -->
+  <div class="row justify-content-center">
+    <div class="mb-3 col-6 px-4">
+      <div class="row justify-content-between">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> I agree to the <a class="text-primary"
+              href="#terms">terms</a>
+          </label>
+        </div>
+        <a href="#register" role="button" class="col-3 btn btn-primary" type="submit"><i class="far fa-save"></i>
+          Register</a>
       </div>
-      <div class="ml-3 mr-3">
-          <div class="card text-center" style="width: 18rem;">                
-              <ul class="list-group">
-                  <li class="list-group-item bg-success p-3 font-weight-bold"><h4>FREE PLAN</h4></li>
-                  <li class="list-group-item p-4 font-weight-bolder"><h3>$10 / month</h3></li>
-                  <li class="list-group-item">Personal use</li>
-                  <li class="list-group-item">Unlimited projects</li>
-                  <li class="list-group-item">27/7 support</li>                        
-              </ul>
-              <div class="card-header py-3 px-4">
-                  <a href="#BuyNow" class="btn btn-success pl-5 pr-5 w-100">BUY NOW!</a>
-              </div>
-          </div>
-      </div>
+    </div>
   </div>
-  </body>
+
+  <div class="row justify-content-center mb-3">- OR -</div>
+
+  <!-- button -->
+  <div class="row justify-content-center">
+    <a href="#facebook" role="button" class="btn col-2 mr-1 btn-primary" type="submit"><i
+        class="zmdi zmdi-facebook"></i> Sign up using Facebook</a>
+    <a href="#google" role="button" class="btn col-2 ml-1 btn-danger" type="submit"><i class="fab fa-google-plus-g"></i>
+      Sign up using Google+</a>
+  </div>
+  <br>
+  <hr>
+
+  <!-- 2. Table Price -->
+  <h5 class="text-center">2. Table Price</h5>
+
+  <div class="d-flex flex-row justify-content-center mt-3">
+    <div class="ml-3 mr-3">
+      <div class="card text-center" style="width: 18rem;">
+        <ul class="list-group">
+          <li class="list-group-item bg-danger p-3 font-weight-bold">
+            <h4>DEV PLAN</h4>
+          </li>
+          <li class="list-group-item p-4 font-weight-bolder">
+            <h3>$10 / month</h3>
+          </li>
+          <li class="list-group-item">Personal use</li>
+          <li class="list-group-item">Unlimited projects</li>
+          <li class="list-group-item">27/7 support</li>
+        </ul>
+        <div class="card-header py-3 px-4">
+          <a href="#BuyNow" class="btn btn-danger pl-5 pr-5 w-100">BUY NOW!</a>
+        </div>
+      </div>
+    </div>
+    <div class="ml-3 mr-3">
+      <div class="card text-center" style="width: 18rem;">
+        <ul class="list-group">
+          <li class="list-group-item bg-primary p-3 font-weight-bold">
+            <h4>PRO PLAN</h4>
+          </li>
+          <li class="list-group-item p-4 font-weight-bolder">
+            <h3>$10 / month</h3>
+          </li>
+          <li class="list-group-item">Personal use</li>
+          <li class="list-group-item">Unlimited projects</li>
+          <li class="list-group-item">27/7 support</li>
+        </ul>
+        <div class="card-header py-3 px-4">
+          <a href="#BuyNow" class="btn btn-primary pl-5 pr-5 w-100">BUY NOW!</a>
+        </div>
+      </div>
+    </div>
+    <div class="ml-3 mr-3">
+      <div class="card text-center" style="width: 18rem;">
+        <ul class="list-group">
+          <li class="list-group-item bg-success p-3 font-weight-bold">
+            <h4>FREE PLAN</h4>
+          </li>
+          <li class="list-group-item p-4 font-weight-bolder">
+            <h3>$10 / month</h3>
+          </li>
+          <li class="list-group-item">Personal use</li>
+          <li class="list-group-item">Unlimited projects</li>
+          <li class="list-group-item">27/7 support</li>
+        </ul>
+        <div class="card-header py-3 px-4">
+          <a href="#BuyNow" class="btn btn-success pl-5 pr-5 w-100">BUY NOW!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+  <!-- 3. List -->
+  <h5 class="text-center">3. List</h5>
+  <div class="d-flex flex-row justify-content-center mt-3">
+    <div class="card col-6 px-0">
+      <ul class="list-group">
+        <li class="list-group-item bg-primary text-white font-weight-bold pb-3 d-flex flex-row justify-content-between">
+          <div>
+            <i class="zmdi zmdi-menu"></i> Sortable Lists
+          </div>
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">              
+              <i class="fa fa-gear" style="font-size:20px"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item text d-flex flex-row justify-content-between">
+          <div class="font-weight-bold">List group item 1</div>
+          <div>
+            <button class="bg-white border-0"><i class="fa fa-pencil text-primary"></i></button>
+            <button class="bg-white border-0"><i class="fas fa-trash text-danger"></i></button>
+            <button class="bg-white border-0"><i class="fa fa-flag text-warning"></i></button>
+          </div>
+        </li>
+        <li class="list-group-item text d-flex flex-row justify-content-between">
+          <div class="font-weight-bold">List group item 2</div>
+          <div>
+            <button class="bg-white border-0"><i class="fa fa-pencil text-primary"></i></button>
+            <button class="bg-white border-0"><i class="fas fa-trash text-danger"></i></button>
+            <button class="bg-white border-0"><i class="fa fa-flag text-warning"></i></button>
+          </div>
+        </li>
+        <li class="list-group-item text d-flex flex-row justify-content-between">
+          <div class="font-weight-bold">List group item 3</div>
+          <div>
+            <button class="bg-white border-0"><i class="fa fa-pencil text-primary"></i></button>
+            <button class="bg-white border-0"><i class="fas fa-trash text-danger"></i></button>
+            <button class="bg-white border-0"><i class="fa fa-flag text-warning"></i></button>
+          </div>
+        </li>
+        <li class="list-group-item text d-flex flex-row justify-content-between">
+          <div class="font-weight-bold">List group item 4</div>
+          <div>
+            <button class="bg-white border-0"><i class="fa fa-pencil text-primary"></i></button>
+            <button class="bg-white border-0"><i class="fas fa-trash text-danger"></i></button>
+            <button class="bg-white border-0"><i class="fa fa-flag text-warning"></i></button>
+          </div>
+        </li>        
+        <li class="list-group-item pb-3 d-flex flex-row justify-content-between bg-light">
+          <div>Total Count <span class="badge badge-info">25</span></div>
+          <div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
 </html>
