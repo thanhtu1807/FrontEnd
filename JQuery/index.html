@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,11 +18,11 @@
   <div class="container-1">
     <div class="header">What is the Difference Between the two Numbers?</div>
     <div class="content">
-      <div title="startButton"><button>Start Subtraction</button></div>
-      <div title="expression">
-        <input type="text" value="7"> - <input type="text" value="5"> =
+      <div><button id="js-start-button">Start Subtraction</button></div>
+      <div class="expression">
+        <input type="text" id="js-first-operand"> - <input type="text" id="js-second-operand"> =
       </div>
-      <div title="result">
+      <div class="js-choose-value">
         <button>0</button>
         <button>1</button>
         <button>2</button>
@@ -33,14 +35,14 @@
         <button>9</button>
         <button>10</button>
       </div>
-      <div title="comment">
-        <input type="text" value="Incorrect">
+      <div>
+        <input id="js-comment" type="text">
       </div>
     </div>
     <div class="footer">
       <span>
-        You have <input type="text" value="0"> correct. and <input type="text" value="1"> incorrect. This is <input
-          type="text" value="0"> percent
+        You have <input id="js-correct-count" type="text" value="0"> correct. and <input id="js-incorrect-count"
+          type="text" value="0"> incorrect. This is <input id="js-correct-percent" type="text" value="0"> percent
         correct
       </span>
     </div>
@@ -53,28 +55,29 @@
     <center>Task 2</center>
   </h3>
   <div class="container-2">
-    <div class="calculation">
-      <label for="">Convert</label>
-      <input id="input-task2" type="text">
-      <div class="mybox">
-        <span class="myarrow"></span>
-        <select>
+    <div class="js-calculation-2">
+      <label>Convert</label>
+      <input class="input" type="text">
+      <div class="box">
+        <span class="my-arrow"></span>
+        <select class="from">
           <option selected>kg</option>
           <option>lb</option>
         </select>
       </div>
-      <div class="mybox">
-        <span class="myarrow"></span>
-        <select>
+      <div class="box">
+        <span class="my-arrow"></span>
+        <select class="to">
           <option>kg</option>
           <option selected>lb</option>
         </select>
       </div>
-      <button id="calculate-task2">Calculate</button>
+      <button class="calculate">Calculate</button>
     </div>
 
-    <div id="result-task2" class="result-text">123123123</div>
+    <div class="result">0</div>
   </div>
+
   <br>
   <hr>
 
@@ -83,27 +86,27 @@
     <center>Task 3</center>
   </h3>
   <div class="container-3">
-    <div class="calculation">
-      <label for="">Convert</label>
-      <input id="input-task3" type="text">
-      <div class="mybox">
-        <span class="myarrow"></span>
-        <select>
+    <div class="js-calculation-3">
+      <label>Convert</label>
+      <input class="input" type="text">
+      <div class="box">
+        <span class="my-arrow"></span>
+        <select class="from">
           <option selected>C</option>
           <option>F</option>
         </select>
       </div>
-      <div class="mybox">
-        <span class="myarrow"></span>
-        <select>
+      <div class="box">
+        <span class="my-arrow"></span>
+        <select class="to">
           <option>C</option>
           <option selected>F</option>
         </select>
       </div>
-      <button>Calculate</button>
+      <button class="calculate">Calculate</button>
     </div>
 
-    <div id="result-task3" class="result-text">123123123</div>
+    <div class="result">0</div>
   </div>
 
 

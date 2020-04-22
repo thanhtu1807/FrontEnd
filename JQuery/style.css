@@ -11,27 +11,40 @@
   text-align: center;
 }
 
-.content>div {
+.content > div {
   margin: 10px;
 }
 
 button {
   cursor: pointer;
   padding: 2px 10px;
-  background: linear-gradient(0deg, rgb(224, 224, 224) 50%, rgb(238, 238, 238) 50%);
+  background: linear-gradient(
+    0deg,
+    rgb(224, 224, 224) 50%,
+    rgb(238, 238, 238) 50%
+  );
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.514);
   border-radius: 2px;
 }
 
-.container-2, .container-3 {
+button:active {
+  background: linear-gradient(
+    0deg,
+    rgb(214, 214, 214) 50%,
+    rgb(228, 228, 228) 50%
+  );
+}
+.container-2,
+.container-3 {
   width: 45%;
   margin: auto;
   border: 1px solid black;
   padding: 8px;
 }
 
-.calculation * {
+.js-calculation-2 *,
+.js-calculation-3 * {
   margin: 3px;
 }
 
@@ -39,19 +52,20 @@ select {
   width: 45px;
 }
 
-.mybox {
+.box {
   position: relative;
   display: inline-block;
 }
 
-.mybox .myarrow {
+.box .my-arrow {
   width: 19px;
   height: 19px;
   position: absolute;
   display: inline-block;
   top: 0px;
   right: 0px;
-  background: url("https://w7.pngwing.com/pngs/709/981/png-transparent-computer-icons-arrow-drop-down-list-down-arrow-angle-rectangle-triangle.png") right / 90% no-repeat #eee;
+  background: url("https://w7.pngwing.com/pngs/709/981/png-transparent-computer-icons-arrow-drop-down-list-down-arrow-angle-rectangle-triangle.png")
+    right / 90% no-repeat #eee;
   pointer-events: none;
   border: 1px solid rgb(49, 49, 49);
 }
