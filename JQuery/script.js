@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  // bai 1
-  $("#js-start-button").click(function () {
+  // Task 1
+  $("#js-start").click(function () {
     let expression = randomTwoNumbers();
     $("#js-first-operand").attr("value", expression.firstOperand);
     $("#js-second-operand").attr("value", expression.secondOperand);
@@ -8,13 +8,13 @@ $(document).ready(function () {
     $(this).addClass("started"); // started already
   });
 
-  $(".js-choose-value > button").click(function () {
+  $(".js-content__result > button").click(function () {
     const chooseValue = $(this).text();
     let correctCount = parseInt($("#js-correct-count").attr("value"));
     let incorrectCount = parseInt($("#js-incorrect-count").attr("value"));
 
-    if (!$("#js-start-button").hasClass("started")) return;
-    if (chooseValue === $("#js-start-button").attr("value").toString()) {
+    if (!$("#js-start").hasClass("started")) return;
+    if (chooseValue === $("#js-start").attr("value").toString()) {
       $("#js-comment").attr("value", "Correct");
       correctCount++;
     } else {
@@ -24,17 +24,14 @@ $(document).ready(function () {
     updateDisplay(correctCount, incorrectCount);
   });
 
-  // bai 2
-  $(".js-calculation-2 .calculate").click(function () {
-    const container = $(".js-calculation-2");
-    console.log(container);
-    convert(container);
+  // Task 2
+  $("#js-calculate-2").click(function () {
+    convert($(this));
   });
 
-  // bai 3
-  $(".js-calculation-3 .calculate").click(function () {
-    const container = $(".js-calculation-3");
-    convert(container);
+  // Task 3
+  $("#js-calculate-3").click(function () {
+    convert($(this));
   });
 });
 
@@ -86,31 +83,19 @@ function convertMeasure(measure, input) {
   return output;
 }
 
-function convert(container) {
-  let inputString = container.find(".input").val();
+function convert(calculateBtn) {
+  const firstRow = calculateBtn.parents(".first-row");
+  const firstRowInput = firstRow.children(".first-row__input");
+  const inputString = firstRowInput.val();
   let input = Number(inputString);
-  const fromMeasure = container.find("select.from :selected").text();
-  const toMeasure = container.find("select.to :selected").text();
+  const fromMeasure = firstRow.find(".first-row__from :selected").text();
+  const toMeasure = firstRow.find(".first-row__to :selected").text();
   if (isNaN(input) || !inputString) {
-    container.siblings(".result").text("Please enter a number");
+    firstRow.next().text("Please enter a number");
     return;
   }
   if (fromMeasure !== toMeasure) {
     input = convertMeasure(fromMeasure, input);
   }
-  container.siblings(".result").text(input);
+  firstRow.next().text(input);
 }
-
-// $("#js-calculate-2").click(function () {
-//   let input = Number($("#js-input-2").val());
-//   const fromMeasure = $("#js-from-2").find(":selected").text();
-//   const toMeasure = $("#js-to-2").find(":selected").text();
-//   if (isNaN(input)) {
-//     $("#js-result-2").text("Please enter a number");
-//     return;
-//   }
-//   if (fromMeasure !== toMeasure) {
-//     input = convertMeasure(fromMeasure, input);
-//   }
-//   $("#js-result-2").text(input);
-// });

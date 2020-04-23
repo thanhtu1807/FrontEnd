@@ -12,17 +12,17 @@
 
 <body>
   <!-- Task 1 -->
-  <h3>
-    <center>Task 1</center>
-  </h3>
+  <h3 class="task-header"> Task 1 </h3>
   <div class="container-1">
     <div class="header">What is the Difference Between the two Numbers?</div>
     <div class="content">
-      <div><button id="js-start-button">Start Subtraction</button></div>
-      <div class="expression">
+      <div class="content__start-btn btn btn--classic">
+        <button id="js-start">Start Subtraction</button>
+      </div>
+      <div class="content__expression">
         <input type="text" id="js-first-operand"> - <input type="text" id="js-second-operand"> =
       </div>
-      <div class="js-choose-value">
+      <div class="js-content__result btn btn--classic">
         <button>0</button>
         <button>1</button>
         <button>2</button>
@@ -35,7 +35,7 @@
         <button>9</button>
         <button>10</button>
       </div>
-      <div>
+      <div class="content__comment">
         <input id="js-comment" type="text">
       </div>
     </div>
@@ -47,68 +47,70 @@
       </span>
     </div>
   </div>
+
   <br>
   <hr>
 
   <!-- Task 2 -->
-  <h3>
-    <center>Task 2</center>
-  </h3>
+  <h3 class="task-header"> Task 2 </h3>
   <div class="container-2">
-    <div class="js-calculation-2">
-      <label>Convert</label>
-      <input class="input" type="text">
-      <div class="box">
+    <div class="first-row">
+      <span>Convert</span>
+      <input class="first-row__input" type="text">
+      <div class="first-row__measure">
         <span class="my-arrow"></span>
-        <select class="from">
+        <select class="first-row__from">
           <option selected>kg</option>
           <option>lb</option>
         </select>
       </div>
-      <div class="box">
+      <div class="first-row__measure">
         <span class="my-arrow"></span>
-        <select class="to">
+        <select class="first-row__to">
           <option>kg</option>
           <option selected>lb</option>
         </select>
       </div>
-      <button class="calculate">Calculate</button>
+      <div class="first-row__calculate btn btn--classic">
+        <button id="js-calculate-2">Calculate</button>
+      </div>
     </div>
-
-    <div class="result">0</div>
+    <div class="second-row">
+      0
+    </div>
   </div>
 
   <br>
   <hr>
 
   <!-- Task 3 -->
-  <h3>
-    <center>Task 3</center>
-  </h3>
+  <h3 class="task-header"> Task 3 </h3>
   <div class="container-3">
-    <div class="js-calculation-3">
-      <label>Convert</label>
-      <input class="input" type="text">
-      <div class="box">
+    <div class="first-row">
+      <span>Convert</span>
+      <input class="first-row__input" type="text">
+      <div class="first-row__measure">
         <span class="my-arrow"></span>
-        <select class="from">
+        <select class="first-row__from">
           <option selected>C</option>
           <option>F</option>
         </select>
       </div>
-      <div class="box">
+      <div class="first-row__measure">
         <span class="my-arrow"></span>
-        <select class="to">
+        <select class="first-row__to">
           <option>C</option>
           <option selected>F</option>
         </select>
       </div>
-      <button class="calculate">Calculate</button>
+      <div class="first-row__calculate btn btn--classic">
+        <button id="js-calculate-3">Calculate</button>
+      </div>
     </div>
-
-    <div class="result">0</div>
+    <div class="second-row">
+      0
+    </div>
   </div>
-
 
 </body>
 
