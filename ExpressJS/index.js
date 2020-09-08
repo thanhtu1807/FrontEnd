@@ -1,8 +1,15 @@
 const express = require('express')
 const app = express()
-const bodyParser = require('body-parser')
 
 const port = 3000
+//lowdb
+const low = require('lowdb')
+const FileSync = require('lowdb/adapters/FileSync')
+
+const adapter = new FileSync('db.json')
+const db = low(adapter)
+//body parser
+const bodyParser = require('body-parser')
 
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
@@ -14,6 +21,7 @@ app.set('view engine', 'pug')
 users = [
     {id: 1, name: 'Tu'},
     {id: 2, name:'Tuan'},
+    {id: 3, name:'Teo'},
 ]
 // app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/', (req, res) => res.render('index', {name: 'Tu'}))
